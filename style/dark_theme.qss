@@ -1,0 +1,122 @@
+/* Global Window Styles */
+QWidget {
+	background-color: #232323;
+	color: #f0f0f0;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 13px;
+}
+
+/* Title Styles */
+QLabel#titleLabel {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+/* Version Styles */
+QLabel#versionLabel {
+	color: #aaaaaa;
+	font-size: 16px;
+}
+
+/* Group Box Styles */
+QGroupBox {
+	border: 1px solid #666666;
+	border-radius: 6px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+QGroupBox::title {
+	color: #dddddd;
+	left: 10px;
+	padding: 0 5px 0 5px;
+	subcontrol-origin: margin;
+}
+
+/* Combo Box Styles */
+QComboBox {
+	background-color: #454545;
+	border: 1px solid #666666;
+	border-radius: 6px;
+	padding: 4px 6px;
+}
+
+QComboBox::drop-down {
+	image: url(images/chevron-down.png);
+	subcontrol-origin: padding;
+	subcontrol-position: center right;
+	width: 27.5px;
+}
+
+QComboBox QAbstractItemView {
+	background-color: #3a3a3a;
+	border: 1px solid #454545;
+	border-radius: 6px;
+	outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+	padding: 4px 6px;
+}
+
+QComboBox QAbstractItemView::item:selected {
+	background-color: #a93e3e;
+	outline: none;
+}
+
+QComboBox QScrollBar:vertical,
+QScrollBar:horizontal {
+	background: #3a3a3a;
+}
+
+/* Push Button Styles */
+QPushButton {
+	background-color: #454545;
+	border: 1px solid #666666;
+	border-radius: 6px;
+	padding: 4px 6px;
+}
+
+QPushButton::hover {
+	background-color: #505050;
+}
+
+QPushButton::pressed {
+	background-color: #3a3a3a;
+}
+
+/* Ping Output Styles */
+QTextEdit#pingOutput {
+	background-color: #181818;
+	border: 1px solid #666666;
+	border-radius: 6px;
+	color: #dddddd;
+	font-family: "Consolas", "Courier New", monospace;
+	padding: 4px;
+}
+
+QTextEdit#pingOutput QScrollBar:vertical,
+QScrollBar:horizontal {
+	background: #121212;
+}
+
+/* ScrollBar Track Styles */
+QScrollBar:vertical,
+QScrollBar:horizontal {
+	margin: 2px;
+	width: 10px;
+}
+
+/* ScrollBar Handle Styles */
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal {
+	background: #5e5e5e;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line,
+QScrollBar::add-page,
+QScrollBar::sub-page {
+	background: none;
+}
