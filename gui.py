@@ -36,7 +36,14 @@ def resource_path(relative_path):
 
 def load_stylesheet(path):
     with open(resource_path(path), "r", encoding="utf-8") as file:
-        return file.read()
+        stylesheet = file.read()
+
+    image_path = resource_path("images/chevron-down.png").replace("\\", "/")
+    stylesheet = stylesheet.replace(
+        "url(images/chevron-down.png)", f"url({image_path})"
+    )
+
+    return stylesheet
 
 
 def format_active_regions_status(active_regions):
@@ -69,8 +76,8 @@ def run_gui():
     window.setFixedSize(600, 640)
 
     # Load QSS Stylesheet
-    stylesheet = load_stylesheet("style/dark_theme.qss")
-    app.setStyleSheet(stylesheet)
+    qss = load_stylesheet("style/dark_theme.qss")
+    app.setStyleSheet(qss)
 
     layout = QVBoxLayout()
 
