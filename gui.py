@@ -86,7 +86,7 @@ def run_gui():
     title.setAlignment(Qt.AlignmentFlag.AlignHCenter)
     title.setObjectName("titleLabel")
 
-    version = QLabel("v1.0.0")
+    version = QLabel("v1.0.1")
     version.setAlignment(Qt.AlignmentFlag.AlignHCenter)
     version.setObjectName("versionLabel")
 
